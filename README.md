@@ -1,3 +1,3 @@
 # :sunflower: cakaran
 
-semoga apa yang ada disini, bisa membantu.
+semoga apa yang ada disini bisa membantu.
