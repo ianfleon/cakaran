@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sidebar</title>
+</head>
+
+<!-- CSS -->
+<style type="text/css" media="screen">
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #eee;
+}
+
+/* Container */
+.container {
+	width: 100%;
+	height: 100vh;
+	background: red;
+	margin: auto;
+	display: flex;
+}
+
+/* Sidebar Kiri */
+.side-kiri {
+	width: 270px;
+	height: 100%;
+	background: blue;
+	transition: .2s all ease-in-out;
+}
+
+.btn-toggle-sidebar {
+	margin: 1rem 0 0 1rem;
+}
+
+.open-close {
+	width: 0;
+	transition: .2s all ease-in-out;
+}
+
+</style>
+
+<body>
+
+<!-- Container -->
+<div class="container">
+
+	<!-- Sidebar Kiri -->
+	<div class="side-kiri">
+	</div>
+
+	<!-- Sidebar Kanan -->
+	<div class="side-kanan">
+		<button class="btn-toggle-sidebar">=</button>
+	</div>
+
+</div>
+<!-- // Container // -->
+
+<script>
+
+const btn_toggle = document.querySelector('.btn-toggle-sidebar');
+const side_kiri = document.querySelector('.side-kiri');
+// console.log(btn_toggle);
+
+btn_toggle.addEventListener('click', ()=> {
+	side_kiri.classList.toggle('open-close');
+});
+
+</script>
+
+</body>
+</html>
